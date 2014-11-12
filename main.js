@@ -10,7 +10,12 @@ function pushToArray(){
     //push item to global array
     arr.push(itemToAddInput.value);
     
+    //remove added item from input field
+    itemToAddInput.value = "";
+    
+    //focus curser on input field 
+    itemToAddInput.focus();
+    
     //show new array as string
     arrayString.innerHTML = arr.join(delimiterInput.value);
-    
 }
